@@ -1,6 +1,5 @@
 import { useAddress, useMetamask } from "@thirdweb-dev/react";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import Main from "../components/Home";
 
 const style = {
   wrapper: `flex h-screen items-screen justify-center`,
@@ -20,5 +19,5 @@ export default function Home() {
       </button>
     </div>
   );
-  return <>{address ? <div>LOGGED IN</div> : <Auth />}</>;
+  return <>{address ? <Main /> : <Auth />}</>;
 }
