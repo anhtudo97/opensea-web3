@@ -25,7 +25,7 @@ const NFT = () => {
   const { tokenID } = router.query;
   console.log(tokenID);
   const marketplace = useMarketplace(
-    "0x94bd4093E4De9d8aA3e851EdCf64c2e2b97b901F"
+    "0x3366BaCe0c60C20Cc454352dc805f642856Cd37c"
   );
   const address = useAddress();
 
@@ -58,7 +58,7 @@ const NFT = () => {
 
   return (
     <TopNavbarLayout>
-      {/* <div className={style.wrapper}>
+      <div className={style.wrapper}>
         {loading ? (
           <div>Loading...</div>
         ) : (
@@ -85,7 +85,7 @@ const NFT = () => {
             </div>
           </div>
         )}
-      </div> */}
+      </div>
     </TopNavbarLayout>
   );
 };
